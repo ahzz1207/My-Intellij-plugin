@@ -1,0 +1,1 @@
+{"id":"5","title":"Modify the zoom function based on JHotDraw framework's source code and JHotDraw.sample.draw","description":"1. Use scroll bar to implement zoom function 2. The zoom operation apply to all the figures on the view 3. Display the percentage of zoom dynamically."}

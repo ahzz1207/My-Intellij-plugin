@@ -1,0 +1,1 @@
+{"id":"1","title":"Read/convert an InputStream to a String","description":"Suppose I have an InputStream that contains text data, and I want to convert this to a String. For example, so I can write the contents of the stream to a log file.  What is the easiest way to take the InputStream and convert it to a String?"}

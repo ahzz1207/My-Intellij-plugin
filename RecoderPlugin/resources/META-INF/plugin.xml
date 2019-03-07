@@ -1,0 +1,76 @@
+<idea-plugin>
+  <id>TaskManagerPlugin.TaskManagerAction</id>
+  <name>TaskManager</name>
+  <version>1.0</version>
+  <vendor email="17210240114@fudan.edu.cn" url="www.fudan.cn">FDU</vendor>
+
+  <description><![CDATA[
+      This plugin can be used to recode programming process of users.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      The first version-1.0.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <toolWindow id="Task Manager" secondary="true"  anchor="right"
+                factoryClass="ui.TaskManagerWindowFactory"/>
+
+    <!-- Persistent Service-->
+    <applicationService serviceImplementation="service.TaskManagerSetting" serviceInterface="service.TaskManagerSetting"/>
+
+    <!-- Project Configurable -->
+    <projectConfigurable groupId="tools" displayName="TaskManager Plugin" id="myconfig" instance="configurations.MyConfiguration"/>
+
+  </extensions>
+
+  <actions>
+    <group id="AddFlagActions" text="AddFlag" popup="true">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <action id="HighFlag" class="record.AddFlag" text="AddHighFlag"
+              description="Illustrates how to plug an action in">
+      </action>
+      <action id="MedianFlag" class="record.AddFlag2" text="AddMedianFlag"
+              description="Illustrates how to plug an action in">
+      </action>
+      <action id="LowFlag" class="record.AddFlag3" text="AddLowFlag"
+              description="Illustrates how to plug an action in">
+      </action>
+    </group>
+    <action id="RemoveFlag" class="record.RemoveFlag" text="RemoveFlag"
+            description="Illustrates how to plug an action in">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+    </action>
+
+    <!-- Add your actions here -->
+    <!--
+    -->
+  </actions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+    <!--
+    <component>
+      <implementation-class>TaskManagerProjectComponent</implementation-class>
+    </component>
+    -->
+  </project-components>
+
+</idea-plugin>

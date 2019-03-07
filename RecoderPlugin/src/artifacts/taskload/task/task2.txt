@@ -1,0 +1,1 @@
+{"id":"2","title":"compress file/folder with zip algorithm","description":"1. Use zip algorithm to compress a file or a folder to the target path. 2. The folder that will be compressed may be an empty folder. 3. The generated zip file needs to be decompressed into the original directory structure. "}

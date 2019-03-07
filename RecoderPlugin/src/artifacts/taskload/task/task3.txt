@@ -1,0 +1,1 @@
+{"id":"3","title":"Implements simple-editor based on JHotDraw framework","description":"1. Based on JHotDraw framework 2. afford copy,cut,paste operation 3. display line-number (start with 0) 4. left-aligning 5. display line-number dynamically, responses to content in the editor. 6.Text in longer entries that extends beyond the viewing area is displayed on the following line. "}

@@ -1,0 +1,1 @@
+{"id":"5","title":"How do I convert a String to an int in Java","description":"How can I convert a String to an int in Java?  My String contains only numbers, and I want to return the number it represents.  For example, given the string \"1234\" the result should be the number 1234."}

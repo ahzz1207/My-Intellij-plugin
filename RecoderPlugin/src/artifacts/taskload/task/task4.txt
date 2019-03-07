@@ -1,0 +1,1 @@
+{"id":"4","title":"Implements color-attribute-operation logger based on JHotDraw framework's source code and JHotDraw.sample.draw.","description":"1. With user interface 2. Record time of operation 3. Record operation type(stroke color/fill color/text color) 4. Record hexadecimal of changed color  5. Display the color. "}

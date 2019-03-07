@@ -1,0 +1,1 @@
+{"id":"2","title":"Create ArrayList from array","description":"I have an array that is initialized like:  Element[] array = {new Element(1), new Element(2), new Element(3)}; I would like to convert this array into an object of the ArrayList class.  ArrayList<Element> arraylist = ???;"}
